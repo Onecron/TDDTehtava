@@ -16,7 +16,7 @@ namespace TDDTehtävä
             {
             }
 
-            public int Score()
+            public int Tulos()
             {
                 return 0;
             }

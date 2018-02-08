@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace TDDTehtävä
 {
     [TestFixture]
-    public class Keilauksen_pistelaskuri_test
+    public class LaskuriTest
     {
         Laskuri laskuri;
 
@@ -17,15 +17,23 @@ namespace TDDTehtävä
         {
             laskuri = new Laskuri();
         }
+
         [Test]
-        public void EiKaatoja()
+        public void EiPisteitä()
         {
             Laskuri laskuri = new Laskuri();
             for (int frameNumber = 0; frameNumber < 10; frameNumber++)
                 laskuri.Tyhjäruutu(0, 0);
-            Assert.AreEqual(0, laskuri.Score());
+            Assert.AreEqual(0, laskuri.Tulos());
         }
-
+        [Test]
+        public void EiKaatoja()
+        {
+            Laskuri game = new Laskuri();
+            for (int frameNumber = 0; frameNumber < 10; frameNumber++)
+                laskuri.Tyhjäruutu(0, 0);
+            Assert.AreEqual(10, laskuri.Tulos());
+        }
 
 
 
