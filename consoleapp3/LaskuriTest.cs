@@ -18,6 +18,13 @@ namespace TDDTehtävä
             laskuri = new Laskuri();
         }
 
+        // Tarvitaan testata kaikki mahdolliset yhdistelmät joita voi syntyä pelin aikana.
+        // Jokaista mahdollista tulosta ei kannata koodata erikseen koska mahdollisuuksia on todella monta.
+        // Pitää keksiä jonkinlainen ratkaisu.
+        // Yksi mahdollinen ratkaisu olisi jonkinlainen (array) joka laskee jokaisen heitoin erikseen
+
+
+        // Toimiva testi jos ei yhtään pisteitä
         [Test]
         public void EiPisteitä()
         {
@@ -26,6 +33,8 @@ namespace TDDTehtävä
                 laskuri.Tyhjäruutu(0, 0);
             Assert.AreEqual(0, laskuri.Tulos());
         }
+    
+        // WIP testi jos kaadetaan kaikki keilat kahdella heitolla
         [Test]
         public void EiKaatoja()
         {
@@ -34,8 +43,6 @@ namespace TDDTehtävä
                 laskuri.Tyhjäruutu(0, 0);
             Assert.AreEqual(10, laskuri.Tulos());
         }
-
-
 
     }
 }

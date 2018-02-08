@@ -15,7 +15,6 @@ namespace TDDTehtävä
             public void Tyhjäruutu(int EnsimmäinenHeitto, int ToinenHeitto)
             {
             }
-
             public int Tulos()
             {
                 return 0;
