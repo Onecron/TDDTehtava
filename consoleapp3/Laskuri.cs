@@ -17,7 +17,7 @@ namespace TDDTehtävä
             }
             public int Tulos()
             {
-                return 0;
+            return 0;
             }
         }
     }
